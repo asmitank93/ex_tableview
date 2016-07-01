@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray *arrfruits;
+    NSArray *arrtech;
+}
 
+@property (weak, nonatomic) IBOutlet UITableView *table_vw_1;
+@property (weak, nonatomic) IBOutlet UITableView *table_vw_2;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbl_content;
 
 @end
 
